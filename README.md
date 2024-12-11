@@ -8,6 +8,7 @@ Docker Setup
 Build the Docker image: In the terminal, navigate to the folder containing the Dockerfile and run the following command to build the Docker image:
 
 docker build -t qdrant-shards-script .
+
 Run the Docker container: After building the image, you can run the script within the container by executing:
 
 

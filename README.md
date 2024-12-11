@@ -11,9 +11,9 @@ python3 -m pip install requests prettytable
 
 How to Run
 
-1. Save the script to a file (e.g., qdrant_collections_info.py).
+1. Download and save the script in your machine
 2. Open a terminal and navigate to the directory where the script is saved.
 3. Run the script using:
-python3 qdrant_collections_info.py
+python3 Qdrant_Instance.py
 
 The script will retrieve collection information and the shards ids from your Qdrant instance and display it in a table format.

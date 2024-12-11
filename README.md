@@ -1,19 +1,16 @@
 # Qdrant_Shards_ids
-Python script to retrieve and display the shard IDs of a Qdrant instance in a table format.
+
+This Python script queries the Qdrant API and retrieves information about the current shards of a specified collection in a Qdrant instance. The script presents the data in a well-formatted table for easy viewing. This version runs inside a Docker container for convenience.
+
+Download the repo
+
+Docker Setup
+Build the Docker image: In the terminal, navigate to the folder containing the Dockerfile and run the following command to build the Docker image:
+
+docker build -t qdrant-shards-script .
+Run the Docker container: After building the image, you can run the script within the container by executing:
 
 
-Prerequisites
+docker run --rm qdrant-shards-script
 
-Python 3: Ensure Python 3.7 or higher is installed on your system.
-Dependencies: Install the required Python libraries:
-
-python3 -m pip install requests prettytable
-
-How to Run
-
-1. Download and save the script in your machine
-2. Open a terminal and navigate to the directory where the script is saved.
-3. Run the script using:
-python3 Qdrant_Instance.py
-
-The script will retrieve collection information and the shards ids from your Qdrant instance and display it in a table format.
+This will execute the script, and the output will be displayed in the terminal.
